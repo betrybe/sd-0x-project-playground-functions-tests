@@ -9,6 +9,6 @@ describe('Usando o operador &&', () => {
     expect(compareTrue(false, false)).toBe(false);
   });
   it('passando dois valores true, espera-se resultado true', () => {
-    expect(compareTrue(true, true)).toBe(false);
+    expect(compareTrue(true, true)).toBe(true);
   });
 });
