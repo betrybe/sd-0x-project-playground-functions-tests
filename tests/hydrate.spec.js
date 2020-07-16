@@ -6,6 +6,6 @@ describe('Bem vindo ao Bar da Trybe!', () => {
     expect(challenges.hydrate('1 cachaça, 5 cervejas e 1 copo de vinho')).toEqual('7 copos de água');
     expect(challenges.hydrate('2 shots de tequila, 2 cervejas e 1 corote')).toEqual('5 copos de água');
     expect(challenges.hydrate('1 copo de catuaba, 1 cervejas e 1 copo de vinho')).toEqual('3 copos de água');
-    expect(challenges.hydrate('4 caipirinhas e 2 cervejas')).toEqual('3 copos de água');
+    expect(challenges.hydrate('4 caipirinhas e 2 cervejas')).toEqual('6 copos de água');
   });
 });
