@@ -1,6 +1,6 @@
 const { footballPoints } = require('../src/challenges');
 
-describe('Pontos no futebol', () => {
+describe('5 - Pontos no futebol', () => {
   it('caso o time tenha 14 vitórias e 8 empates, é esperado que tenha 50 pontos', () => {
     expect(footballPoints(14, 8)).toBe(50);
   });
