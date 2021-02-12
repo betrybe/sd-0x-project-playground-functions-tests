@@ -1,12 +1,12 @@
 const challenges = require('../src/challenges');
 
-describe('11 - Número de telefone', () => {
+describe('11 - Crie uma função de Número de telefone', () => {
   it('Caso o array tenha o tamanho diferente de 11, retorna a string "Array com tamanho incorreto."', () => {
-    expect(challenges.generatePhoneNumber([0, 1, 6])).toBe("Array com tamanho incorreto.");
-    expect(challenges.generatePhoneNumber([])).toBe("Array com tamanho incorreto.");
-    expect(challenges.generatePhoneNumber([9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1, 10])).toBe("Array com tamanho incorreto.");
-  })
-  
+    expect(challenges.generatePhoneNumber([0, 1, 6])).toBe('Array com tamanho incorreto.');
+    expect(challenges.generatePhoneNumber([])).toBe('Array com tamanho incorreto.');
+    expect(challenges.generatePhoneNumber([9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1, 10])).toBe('Array com tamanho incorreto.');
+  });
+
   it('Caso algum dos números da array seja menor que 0 retorna a string "não é possível gerar um número de telefone com esses valores"', () => {
     expect(challenges.generatePhoneNumber([9, 2, 3, 0, 5, -6, 7, 8, -7, 0, 1])).toBe('não é possível gerar um número de telefone com esses valores');
     expect(challenges.generatePhoneNumber([3, -2, 1, 9, -5, 0, 7, 4, 0, 6, 1])).toBe('não é possível gerar um número de telefone com esses valores');
